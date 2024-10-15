@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://flask8project-saikou-oumar-diallo-8rtc.onrender.com",
+      "url": "http://localhost:5000",
       "description": "Serveur local"
     }
   ],
