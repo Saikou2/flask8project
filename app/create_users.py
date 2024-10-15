@@ -19,7 +19,7 @@ manager_user = User.query.filter_by(username='manager').first()
 if not admin_user:
     admin_user = User(
         username='admin',
-        email='admin@example.com',
+        email='admin@gmail.com',
         password=generate_password_hash('adminpassword'),  # Hacher le mot de passe
         role='admin'
     )
@@ -30,7 +30,7 @@ if not admin_user:
 if not manager_user:
     manager_user = User(
         username='manager',
-        email='manager@example.com',
+        email='manager@gmail.com',
         password=generate_password_hash('managerpassword'),
         role='manager'
     )
