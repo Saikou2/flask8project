@@ -32,7 +32,7 @@ def login():
     user = User.query.filter_by(email=data['email']).first()
     print("Utilisateur trouvé :", user)
 
-    if not user or not user.check_password(data['password']):
+    if not user  or not user.check_password(data['password']):
         print("Échec de la connexion : Nom d'utilisateur ou mot de passe incorrect")
         return jsonify({"message": "Nom d'utilisateur ou mot de passe incorrect"}), 401
 
